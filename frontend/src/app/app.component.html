@@ -1,0 +1,35 @@
+<div class="banner" style="text-align:center">
+    <div class="inline">
+        <h1>
+            Welcome {{profile.username}}!
+        </h1>
+    </div>
+    <div class="inline">
+        <button type="button" class="btn-red pull-right" (click)="logout()">Logout</button>
+    </div>
+</div>
+
+<div class="flex-container">
+    <div class="box">
+        <h2>You're logged in</h2>
+        <div class="box-content">
+            <label>Username</label>
+            <span>{{profile.username}}</span>
+        </div>
+    </div>
+
+    <div class="box">
+        <h2>Post</h2>
+        <div class="box-content">
+            <button type="button" class="btn-blue" (click)="post()">Call backend service</button>
+
+            <div *ngIf="data">
+                <ul *ngFor="let d of data">
+                    <li>
+                        {{d.name}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
