@@ -11,7 +11,7 @@ Run 'ng serve' for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Backend main method is located in KeyCloakTutorial class.
 
-# Keycloak
+## Keycloak
 
 Navigate to keycloak/bin and run standalone -Djboss.socket.binding.port-offset=100
 Server settings can be imported from keycloak/realm-export.json.
