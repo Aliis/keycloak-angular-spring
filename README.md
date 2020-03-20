@@ -1,21 +1,17 @@
-# Authentication with Spring Boot, Angular 2 and Keycloak
+# Project
 
-- Make sure to start Keycloak before using the application
-- First start the backend application and after that the frontend application
+This project is built with Angular (v 8), Keycloak (v 8.0.2) and Spring Boot (v 1.5.6) using Keycloak token authentication and cookie/session based authentication in backend (Spring Security).
 
-## Run backend
+## Frontend development server
 
-To run the project with embedded Tomcat by maven:
+Run 'npm install' to install package dependencies.
+Run 'ng serve' for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-    cd backend
-    mvn spring-boot:run
-    
-## Run frontend
+## Backend development server
 
-To run the project with development server:
-    
-    cd frontend
-    npm install
-    ng serve
-    
-Then navigate to http://localhost:4200 to see the application in action.
+Backend main method is located in KeyCloakTutorial class.
+
+# Keycloak
+
+Navigate to keycloak/bin and run standalone -Djboss.socket.binding.port-offset=100
+Server settings can be imported from keycloak/realm-export.json.
